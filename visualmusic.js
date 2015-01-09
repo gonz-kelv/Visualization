@@ -230,7 +230,7 @@ function animate()
 window.onload = function() 
 {
 	var req = new XMLHttpRequest();
-	req.open('GET', '../KelvinGonzles_A3/mp3/Pulses.mp3', true);
+	req.open('GET', '../mp3/Pulses.mp3', true);
 	req.responseType = 'arraybuffer';
 	req.onload = function () 
 	{
