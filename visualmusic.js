@@ -63,6 +63,10 @@ function init()
 	var directionalLightA = new THREE.DirectionalLight(0xffffff);
 	directionalLightA.position.set(1, 0,1).normalize();
 	scene.add(directionalLightA);
+	
+	var directionalLightB = new THREE.DirectionalLight(0xffffff);
+	directionalLightB.position.set(-1, -1,-1).normalize();
+	scene.add(directionalLightB);
 	  
 	/* Camera */
 	camera 				= new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 1, 10000);
@@ -170,7 +174,7 @@ function animate()
 	cameraTheta += time * .002;
 	camera.position.x = Math.sin(cameraTheta)* 1000;
 	camera.position.z = Math.cos(cameraTheta)* 1000;
-
+	
 	camera.lookAt( scene.position );
 
 	renderer.render(scene, camera);
