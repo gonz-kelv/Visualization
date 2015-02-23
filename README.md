@@ -13,4 +13,6 @@ Im hoping to make particles when the cubes hit the  sphere with collistion detec
 I want to implement a time for those particles so it will disappear.
 Any insight would be appreciated.
 
+I am using the song Pulses by Karmin for the code to read music data.
+
 -Kelvin
